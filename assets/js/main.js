@@ -112,4 +112,46 @@
   /* ---------- Tahun footer ---------- */
   const year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
+
+  /* ---------- Lightbox galeri poster ---------- */
+  const lightbox = document.getElementById("lightbox");
+  const lbImg = document.getElementById("lbImg");
+  const lbCaption = document.getElementById("lbCaption");
+  const galleryItems = Array.from(document.querySelectorAll(".gallery-card"));
+  let lbIndex = 0;
+
+  if (lightbox && galleryItems.length) {
+    const openLb = (i) => {
+      lbIndex = (i + galleryItems.length) % galleryItems.length;
+      const img = galleryItems[lbIndex].querySelector("img");
+      lbImg.src = img.src;
+      lbImg.alt = img.alt;
+      lbCaption.textContent = galleryItems[lbIndex].dataset.caption || "";
+      lightbox.hidden = false;
+      setTimeout(() => lightbox.classList.add("is-open"), 20);
+      document.body.classList.add("menu-open");
+    };
+    const closeLb = () => {
+      lightbox.classList.remove("is-open");
+      document.body.classList.remove("menu-open");
+      setTimeout(() => { lightbox.hidden = true; }, 250);
+    };
+    const stepLb = (dir) => openLb(lbIndex + dir);
+
+    galleryItems.forEach((item, i) => {
+      item.querySelector(".gallery-thumb")?.addEventListener("click", () => openLb(i));
+    });
+    lightbox.querySelector(".lb-close").addEventListener("click", closeLb);
+    lightbox.querySelector(".lb-prev").addEventListener("click", () => stepLb(-1));
+    lightbox.querySelector(".lb-next").addEventListener("click", () => stepLb(1));
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) closeLb();
+    });
+    document.addEventListener("keydown", (e) => {
+      if (lightbox.hidden) return;
+      if (e.key === "Escape") closeLb();
+      if (e.key === "ArrowLeft") stepLb(-1);
+      if (e.key === "ArrowRight") stepLb(1);
+    });
+  }
 })();
