@@ -37,9 +37,7 @@
       </nav>
 
       <div class="nav-actions">
-        <a href="https://wa.me/6285778179537?text=Halo%2C%20saya%20mau%20order%20website" class="btn btn-primary btn-sm nav-cta" target="_blank" rel="noopener">
-          Order Sekarang
-        </a>
+        <button class="btn btn-primary btn-sm nav-cta" type="button" data-order-open>Order Sekarang</button>
         <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka menu" aria-controls="nav" aria-expanded="false">
           <span></span><span></span>
         </button>
@@ -50,7 +48,7 @@
   <main>
     <!-- ===== Banner utama ===== -->
     <section class="banner" aria-label="Banner WebSpace">
-      <img src="assets/img/banner-webspace.jpg" alt="WebSpace — Jasa pembuatan website profesional" width="1586" height="992" fetchpriority="high" />
+      <img src="assets/img/banner-webspace.jpg" alt="WebSpace - Jasa pembuatan website profesional" width="1600" height="1000" fetchpriority="high" />
     </section>
 
     <!-- ===== Hero ===== -->
@@ -58,16 +56,12 @@
       <div class="hero-bg" aria-hidden="true">
         <span class="blob blob-1"></span>
         <span class="blob blob-2"></span>
-        <span class="shape-ring"></span>
-        <span class="shape-ring small"></span>
         <div class="hero-grid"></div>
         <div class="dot-grid"></div>
       </div>
 
       <div class="container hero-inner">
         <div class="hero-copy reveal">
-          <p class="eyebrow"><span class="pulse-dot"></span> Slot pengerjaan tersedia bulan ini</p>
-
           <h1>Website Profesional untuk Bisnismu, <span class="grad-text">Tanpa Biaya Hosting</span>.</h1>
 
           <p class="hero-lead">
@@ -123,14 +117,6 @@
               </div>
               <div class="sk sk-btn"></div>
             </div>
-            <div class="mockup-badge">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg>
-              <div><b>Hosted on GitHub Pages</b><span>Uptime 99.9% · Gratis</span></div>
-            </div>
-            <div class="mockup-badge badge-2">
-              <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2Z"/></svg>
-              <div><b>4.9/5 rating</b><span>50+ website selesai</span></div>
-            </div>
           </div>
         </div>
       </div>
@@ -181,14 +167,6 @@
           </article>
 
           <article class="feature-card reveal" style="--d:120ms">
-            <span class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v5c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
-            </span>
-            <h3>Hosting Gratis Selamanya</h3>
-            <p>Kami deploy di <b>GitHub Pages</b> — HTTPS aktif, uptime tinggi, tanpa biaya server per bulan.</p>
-          </article>
-
-          <article class="feature-card reveal" style="--d:180ms">
             <span class="feature-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3.5 9h17M3.5 15h17"/><path d="M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z"/></svg>
             </span>
@@ -247,7 +225,7 @@
               <span class="chip-mini">⏱ 1–2 hari</span>
               <span class="chip-mini">🖥 1 halaman</span>
             </div>
-            <a href="https://wa.me/6285778179537?text=Halo%2C%20saya%20mau%20order%20paket%20Landing%20Page" class="btn btn-ghost btn-block" target="_blank" rel="noopener">Order Paket Ini</a>
+            <button type="button" class="btn btn-ghost btn-block" data-order-open data-paket="Landing Page">Order Paket Ini</button>
           </article>
 
           <!-- Paket 2 (featured) -->
@@ -273,7 +251,7 @@
               <span class="chip-mini">⏱ 3–5 hari</span>
               <span class="chip-mini">🖥 3–5 halaman</span>
             </div>
-            <a href="https://wa.me/6285778179537?text=Halo%2C%20saya%20mau%20order%20paket%20Business%20Profile" class="btn btn-primary btn-block" target="_blank" rel="noopener">Order Paket Ini</a>
+            <button type="button" class="btn btn-primary btn-block" data-order-open data-paket="Business Profile">Order Paket Ini</button>
           </article>
 
           <!-- Paket 3 -->
@@ -298,7 +276,7 @@
               <span class="chip-mini">⏱ 2–3 hari</span>
               <span class="chip-mini">🖥 1–2 halaman</span>
             </div>
-            <a href="https://wa.me/6285778179537?text=Halo%2C%20saya%20mau%20order%20paket%20Portofolio" class="btn btn-ghost btn-block" target="_blank" rel="noopener">Order Paket Ini</a>
+            <button type="button" class="btn btn-ghost btn-block" data-order-open data-paket="Portofolio">Order Paket Ini</button>
           </article>
         </div>
 
@@ -803,11 +781,14 @@
           <h2>Siap bikin website untuk <span class="grad-text">bisnismu</span>?</h2>
           <p>Slot pengerjaan terbatas tiap bulan biar kualitas tetap terjaga. Chat sekarang, konsultasi gratis tanpa komitmen.</p>
           <div class="cta-actions">
-            <a href="https://wa.me/6285778179537?text=Halo%2C%20saya%20mau%20order%20website" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+            <button type="button" class="btn btn-primary btn-lg" data-order-open>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/></svg>
+              Isi Form Order
+            </button>
+            <a href="https://wa.me/6285778179537?text=Halo%2C%20saya%20mau%20konsultasi%20dulu" class="btn btn-ghost btn-lg" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 10h8M8 14h5"/><path d="M21 12a8.5 8.5 0 0 1-12.4 7.5L3 21l1.6-5.1A8.5 8.5 0 1 1 21 12Z"/></svg>
-              Order via WhatsApp
+              Chat WhatsApp
             </a>
-            <a href="mailto:ceotutu28@gmail.com" class="btn btn-ghost btn-lg">Email Saya</a>
           </div>
         </div>
       </div>
@@ -861,6 +842,99 @@
     <button class="lb-next" type="button" aria-label="Poster berikutnya">
       <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
     </button>
+  </div>
+
+  <!-- Modal form order -->
+  <div class="order-modal" id="orderModal" role="dialog" aria-modal="true" aria-label="Form order website" hidden>
+    <div class="order-panel">
+      <button class="order-close" type="button" aria-label="Tutup form order">
+        <svg viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+
+      <div class="order-body" id="orderBody">
+        <div class="order-head">
+          <span class="order-badge">⚡ Respon &lt; 1 jam</span>
+          <h3>Form Order Website</h3>
+          <p>Isi datamu — order langsung masuk dashboard kami dan kamu dihubungi via WhatsApp.</p>
+        </div>
+
+        <form id="orderForm" novalidate>
+          <div class="field-row">
+            <label class="field">
+              <span>Nama / Nama usaha <b>*</b></span>
+              <input type="text" name="nama" placeholder="mis. Toko Berkah" required maxlength="80" />
+            </label>
+            <label class="field">
+              <span>No. WhatsApp <b>*</b></span>
+              <input type="tel" name="wa" placeholder="08xxxxxxxxxx" required maxlength="20" inputmode="tel" />
+            </label>
+          </div>
+
+          <label class="field">
+            <span>Pilih paket <b>*</b></span>
+            <select name="paket" required>
+              <option value="" disabled selected>— Pilih paket —</option>
+              <option value="Landing Page — Rp99rb">Landing Page — Rp99rb</option>
+              <option value="Portofolio — Rp149rb">Portofolio — Rp149rb</option>
+              <option value="Business Profile — Rp199rb">Business Profile — Rp199rb</option>
+              <option value="Custom / konsultasi dulu">Custom / konsultasi dulu</option>
+            </select>
+          </label>
+
+          <fieldset class="field">
+            <legend>Pilihan domain</legend>
+            <div class="radio-grid">
+              <label class="radio-card">
+                <input type="radio" name="domainMode" value="Subdomain WebSpace (gratis)" checked />
+                <span class="radio-title">Subdomain WebSpace</span>
+                <span class="radio-desc">Gratis — mis. <i>tokomu.webspace.page</i></span>
+              </label>
+              <label class="radio-card">
+                <input type="radio" name="domainMode" value="Domain sendiri" />
+                <span class="radio-title">Domain sendiri</span>
+                <span class="radio-desc">Beli sendiri, kami setel DNS</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <label class="field">
+            <span>Domain yang diinginkan <small>(opsional)</small></span>
+            <input type="text" name="domain" placeholder="mis. tokoberkah.com" maxlength="60" />
+          </label>
+
+          <label class="field">
+            <span>Catatan kebutuhan <small>(opsional)</small></span>
+            <textarea name="catatan" rows="3" placeholder="mis. website untuk kedai kopi, ada menu & lokasi maps" maxlength="500"></textarea>
+          </label>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg" id="orderSubmit">Kirim Order</button>
+          <p class="order-note">Data kamu hanya dipakai untuk memproses order. Butuh balasan cepat? <a href="https://wa.me/6285778179537" target="_blank" rel="noopener">Chat WhatsApp</a>.</p>
+        </form>
+      </div>
+
+      <div class="order-success" id="orderSuccess" hidden>
+        <div class="success-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        </div>
+        <h3>Order selesai! 🎉</h3>
+        <p>Terima kasih! Sekarang tinggal transfer ke rekening di bawah, lalu kirim bukti bayarnya via WhatsApp — begitu terverifikasi, website kamu langsung kami kerjakan.</p>
+
+        <div class="pay-box">
+          <span class="pay-label">Transfer ke rekening</span>
+          <div class="pay-row">
+            <span class="pay-bank">BNI</span>
+            <span class="pay-num" id="payNum">2019167002</span>
+            <button type="button" class="pay-copy" data-copy="2019167002">Salin</button>
+          </div>
+          <span class="pay-an">a.n. Restu Rosenda</span>
+        </div>
+
+        <div class="success-actions">
+          <a href="https://wa.me/6285778179537" class="btn btn-primary" id="payConfirmWa" target="_blank" rel="noopener">Kirim Bukti Bayar via WhatsApp</a>
+          <button type="button" class="btn btn-ghost" id="orderAgain">Order lagi</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="assets/js/main.js"></script>
