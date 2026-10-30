@@ -1,10 +1,20 @@
 /* ============================================================
    RestuWeb — main.js
-   Nav, reveal, header state, FAQ micro-interaction, toast
+   Nav, reveal, header state, FAQ micro-interaction, toast,
+   lightbox galeri, form order (Cloudflare Worker / fallback WA)
    ============================================================ */
 
 (() => {
   "use strict";
+
+  /* ============================================================
+     KONFIGURASI ORDER REALTIME
+     Isi dengan URL Cloudflare Worker kamu setelah deploy, mis.:
+     https://webspace-order.<subdomain>.workers.dev
+     Kosongkan ("") untuk fallback: order dikirim via WhatsApp.
+     Panduan lengkap: bisnis-web/CLOUDFLARE-SETUP.md
+     ============================================================ */
+  const ORDER_ENDPOINT = "";
 
   const header = document.getElementById("siteHeader");
   const nav = document.getElementById("nav");
@@ -152,6 +162,135 @@
       if (e.key === "Escape") closeLb();
       if (e.key === "ArrowLeft") stepLb(-1);
       if (e.key === "ArrowRight") stepLb(1);
+    });
+  }
+
+  /* ---------- Form order ---------- */
+  const orderModal = document.getElementById("orderModal");
+  const orderForm = document.getElementById("orderForm");
+  const orderBody = document.getElementById("orderBody");
+  const orderSuccess = document.getElementById("orderSuccess");
+  const orderSubmit = document.getElementById("orderSubmit");
+
+  if (orderModal && orderForm) {
+    const openOrder = (paket) => {
+      orderSuccess.hidden = true;
+      orderBody.hidden = false;
+      if (paket) {
+        const sel = orderForm.querySelector('select[name="paket"]');
+        if (sel) {
+          const match = [...sel.options].find((o) => o.value.startsWith(paket));
+          sel.value = match ? match.value : "";
+        }
+      }
+      orderModal.hidden = false;
+      setTimeout(() => orderModal.classList.add("is-open"), 20);
+      document.body.classList.add("menu-open");
+      orderForm.querySelector('input[name="nama"]')?.focus();
+    };
+    const closeOrder = () => {
+      orderModal.classList.remove("is-open");
+      document.body.classList.remove("menu-open");
+      setTimeout(() => { orderModal.hidden = true; }, 250);
+    };
+
+    document.querySelectorAll("[data-order-open]").forEach((btn) => {
+      btn.addEventListener("click", () => openOrder(btn.dataset.paket || ""));
+    });
+    orderModal.querySelector(".order-close").addEventListener("click", closeOrder);
+    orderModal.addEventListener("click", (e) => {
+      if (e.target === orderModal) closeOrder();
+    });
+    document.getElementById("orderAgain")?.addEventListener("click", () => {
+      orderForm.reset();
+      openOrder("");
+    });
+    document.addEventListener("keydown", (e) => {
+      if (orderModal.hidden) return;
+      if (e.key === "Escape") closeOrder();
+    });
+
+    const buildWaText = (d) =>
+      [
+        "Halo WebSpace, saya mau order website:",
+        `• Nama: ${d.nama}`,
+        `• Paket: ${d.paket}`,
+        `• Domain: ${d.domainMode}${d.domain ? ` (${d.domain})` : ""}`,
+        "• Bayar via: Transfer BNI",
+        d.catatan ? `• Catatan: ${d.catatan}` : "",
+        `• No. WA: ${d.wa}`,
+      ].filter(Boolean).join("\n");
+
+    const payConfirmWa = document.getElementById("payConfirmWa");
+
+    /* Setelah order dikirim → langsung layar selesai + info transfer BNI */
+    const tampilkanSelesai = (d) => {
+      payConfirmWa.href =
+        "https://wa.me/6285778179537?text=" + encodeURIComponent(buildWaText(d) + "\n\nSaya sudah transfer ke BNI 2019167002, bukti transfernya saya kirim di sini 🙏");
+      orderBody.hidden = true;
+      orderSuccess.hidden = false;
+    };
+
+    orderForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(orderForm).entries());
+      if (!data.nama?.trim() || !data.wa?.trim() || !data.paket) {
+        showToast("Lengkapi dulu nama, no. WhatsApp, dan paketnya ya.");
+        return;
+      }
+      data.wa = data.wa.replace(/[^0-9+]/g, "");
+
+      orderSubmit.disabled = true;
+      orderSubmit.textContent = "Mengirim…";
+
+      let terkirim = false;
+      if (ORDER_ENDPOINT) {
+        try {
+          const res = await fetch(ORDER_ENDPOINT.replace(/\/$/, "") + "/order", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
+          });
+          terkirim = res.ok;
+        } catch { terkirim = false; }
+      }
+
+      orderSubmit.disabled = false;
+      orderSubmit.textContent = "Kirim Order";
+
+      if (terkirim) {
+        tampilkanSelesai(data);
+        showToast("Order berhasil dikirim ✓");
+      } else {
+        // Fallback: teruskan order via WhatsApp (dipakai juga saat endpoint belum dipasang)
+        window.open(
+          "https://wa.me/6285778179537?text=" + encodeURIComponent(buildWaText(data)),
+          "_blank",
+          "noopener"
+        );
+        tampilkanSelesai(data);
+        showToast("Order dibuka via WhatsApp ✓");
+      }
+    });
+
+    /* ---------- Salin nomor rekening ---------- */
+    document.querySelectorAll("[data-copy]").forEach((btn) => {
+      btn.addEventListener("click", async () => {
+        const teks = btn.dataset.copy;
+        try {
+          await navigator.clipboard.writeText(teks);
+        } catch {
+          const ta = document.createElement("textarea");
+          ta.value = teks;
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand("copy");
+          ta.remove();
+        }
+        const lama = btn.textContent;
+        btn.textContent = "Tersalin ✓";
+        setTimeout(() => { btn.textContent = lama; }, 1800);
+      });
     });
   }
 })();
