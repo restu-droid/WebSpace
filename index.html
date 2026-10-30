@@ -3,921 +3,541 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WebSpace — Jasa Pembuatan Website Murah &amp; Cepat</title>
-  <meta name="description" content="WebSpace — jasa pembuatan website landing page, business profile, dan portofolio mulai Rp99rb. Hosting gratis via GitHub Pages, domain atas nama client, proses cepat &amp; rapi." />
-  <meta name="author" content="WebSpace" />
-  <meta name="theme-color" content="#f5f7fb" />
-
-  <link rel="icon" href="assets/img/logo-webspace.jpg" />
-
+  <title>WebSpace — Studio Pembuatan Website Premium</title>
+  <meta name="description" content="WebSpace adalah studio digital yang membangun website custom untuk bisnis: landing page, company profile, e-commerce, dan web application. Dirancang dengan tujuan, dibangun dengan presisi." />
+  <meta property="og:title" content="WebSpace — Studio Pembuatan Website Premium" />
+  <meta property="og:description" content="Studio digital yang membangun website custom untuk bisnis. Dirancang dengan tujuan, dibangun dengan presisi." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/jpeg" href="assets/img/logo-webspace.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
-  <!-- ===== Header ===== -->
-  <header class="site-header" id="siteHeader">
-    <div class="container nav-wrap">
-      <a href="#home" class="brand">
-        <img class="brand-mark" src="assets/img/logo-webspace.jpg" alt="Logo WebSpace" width="42" height="42" />
-        <span class="brand-text"><b>Web</b>Space</span>
+  <!-- ================= HEADER ================= -->
+  <header class="site-head" id="siteHead">
+    <div class="head-inner">
+      <a href="#beranda" class="wordmark" aria-label="WebSpace - beranda">
+        <img src="assets/img/logo-webspace.jpg" alt="" width="34" height="34" />
+        <span>WEB<em>SPACE</em><sup>&reg;</sup></span>
       </a>
 
-      <nav class="nav" id="nav" aria-label="Navigasi utama">
-        <a href="#home" class="nav-link">Beranda</a>
-        <a href="#fitur" class="nav-link">Fitur</a>
-        <a href="#paket" class="nav-link">Paket</a>
-        <a href="#domain" class="nav-link">Domain</a>
-        <a href="#cara-kerja" class="nav-link">Cara Kerja</a>
-        <a href="#poster" class="nav-link">Poster</a>
-        <a href="#faq" class="nav-link">FAQ</a>
+      <nav class="site-nav" id="siteNav" aria-label="Navigasi utama">
+        <a href="#studio">Studio</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#karya">Karya</a>
+        <a href="#proses">Proses</a>
+        <a href="#paket">Paket</a>
+        <a href="#kontak">Kontak</a>
+        <button type="button" class="btn btn-solid nav-cta" data-order-open>Mulai Proyek</button>
       </nav>
 
-      <div class="nav-actions">
-        <button class="btn btn-primary btn-sm nav-cta" type="button" data-order-open>Order Sekarang</button>
-        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka menu" aria-controls="nav" aria-expanded="false">
-          <span></span><span></span>
-        </button>
-      </div>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span>
+      </button>
     </div>
   </header>
 
-  <main>
-    <!-- ===== Banner utama ===== -->
-    <section class="banner" aria-label="Banner WebSpace">
-      <img src="assets/img/banner-webspace.jpg" alt="WebSpace - Jasa pembuatan website profesional" width="1600" height="1000" fetchpriority="high" />
-    </section>
+  <main id="beranda">
 
-    <!-- ===== Hero ===== -->
-    <section class="hero" id="home">
-      <div class="hero-bg" aria-hidden="true">
-        <span class="blob blob-1"></span>
-        <span class="blob blob-2"></span>
-        <div class="hero-grid"></div>
-        <div class="dot-grid"></div>
-      </div>
-
-      <div class="container hero-inner">
-        <div class="hero-copy reveal">
-          <h1>Website Profesional untuk Bisnismu, <span class="grad-text">Tanpa Biaya Hosting</span>.</h1>
-
-          <p class="hero-lead">
-            Landing page, business profile, atau portofolio — dibuat rapi, responsif,
-            dan cepat. <strong>Hosting gratis selamanya via GitHub Pages</strong>,
-            cukup beli domain-nya saja.
+    <!-- ================= HERO ================= -->
+    <section class="hero" aria-label="Perkenalan WebSpace">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker reveal">Studio Web &mdash; Indonesia <span class="kicker-dot" aria-hidden="true"></span> Menerima proyek baru</p>
+          <h1 class="hero-title">
+            <span class="line reveal" style="--d:60ms">We build</span>
+            <span class="line reveal" style="--d:140ms"><em>digital experiences</em></span>
+            <span class="line reveal" style="--d:220ms">that move</span>
+            <span class="line reveal" style="--d:300ms">businesses <span class="accent">forward.</span></span>
+          </h1>
+          <p class="hero-sub reveal" style="--d:380ms">
+            Website custom yang dirancang dengan tujuan, dibangun dengan presisi,
+            dan siap mengembangkan bisnismu di dunia digital.
           </p>
-
-          <div class="hero-actions">
-            <a href="#paket" class="btn btn-primary">
-              Lihat Paket &amp; Harga
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-            <a href="https://wa.me/6285778179537?text=Halo%2C%20saya%20mau%20konsultasi%20dulu" class="btn btn-ghost" target="_blank" rel="noopener">
-              Konsultasi Gratis
-            </a>
+          <div class="hero-actions reveal" style="--d:460ms">
+            <button type="button" class="btn btn-solid btn-lg" data-order-open>
+              Mulai Proyek
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <a href="#karya" class="btn btn-line btn-lg">Lihat Karya</a>
           </div>
-
-          <ul class="hero-points">
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-              Mulai <b>Rp99.000</b> sekali bayar
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-              Selesai <b>1–5 hari</b>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-              Revisi gratis <b>1–2x</b>
-            </li>
-          </ul>
         </div>
 
-        <div class="hero-visual reveal" data-delay="140">
-          <div class="mockup">
-            <div class="mockup-bar">
-              <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
-              <span class="mockup-url">bisnisanda.com</span>
+        <div class="hero-visual reveal" style="--d:260ms" aria-hidden="true">
+          <div class="code-window">
+            <div class="code-bar">
+              <span class="cdot"></span><span class="cdot"></span><span class="cdot"></span>
+              <span class="code-file">webspace.studio</span>
             </div>
-            <div class="mockup-body">
-              <div class="sk sk-title"></div>
-              <div class="sk sk-line w80"></div>
-              <div class="sk sk-line w60"></div>
-              <div class="mockup-row">
-                <div class="sk sk-card"></div>
-                <div class="sk sk-card"></div>
-                <div class="sk sk-card"></div>
-              </div>
-              <div class="mockup-row">
-                <div class="sk sk-card tall"></div>
-                <div class="sk sk-card tall"></div>
-              </div>
-              <div class="sk sk-btn"></div>
-            </div>
+            <pre class="code-body"><code><span class="ln">01</span><span class="cm">// setiap proyek dimulai dari tujuan</span>
+<span class="ln">02</span><span class="kw">const</span> <span class="vr">project</span> = {
+<span class="ln">03</span>  client: <span class="st">"Bisnis Anda"</span>,
+<span class="ln">04</span>  goal: <span class="st">"tumbuh lebih cepat"</span>,
+<span class="ln">05</span>  stack: [<span class="st">"HTML"</span>, <span class="st">"CSS"</span>, <span class="st">"JS"</span>],
+<span class="ln">06</span>  desain: <span class="st">"custom, bukan template"</span>,
+<span class="ln">07</span>};
+<span class="ln">08</span>
+<span class="ln">09</span><span class="fn">build</span>(project); <span class="cm">// deploy &#10003;</span></code></pre>
+          </div>
+          <div class="hero-meta">
+            <div class="meta-item"><b>2&ndash;5 hari</b><span>rata-rata pengerjaan</span></div>
+            <div class="meta-item"><b>3 paket</b><span>harga transparan</span></div>
+            <div class="meta-item"><b>100%</b><span>desain custom</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== Marquee ===== -->
+    <!-- ================= MARQUEE ================= -->
     <div class="marquee" aria-hidden="true">
       <div class="marquee-track">
-        <span>Landing Page</span><span class="sep">✦</span>
-        <span>Business Profile</span><span class="sep">✦</span>
-        <span>Portofolio</span><span class="sep">✦</span>
-        <span>Domain .com / .my.id</span><span class="sep">✦</span>
-        <span>GitHub Pages Hosting</span><span class="sep">✦</span>
-        <span>SEO Dasar</span><span class="sep">✦</span>
-        <span>Landing Page</span><span class="sep">✦</span>
-        <span>Business Profile</span><span class="sep">✦</span>
-        <span>Portofolio</span><span class="sep">✦</span>
-        <span>Domain .com / .my.id</span><span class="sep">✦</span>
-        <span>GitHub Pages Hosting</span><span class="sep">✦</span>
-        <span>SEO Dasar</span><span class="sep">✦</span>
+        <span>Business Website</span><i>&#10022;</i><span>Landing Page</span><i>&#10022;</i><span>E-Commerce</span><i>&#10022;</i><span>Web Application</span><i>&#10022;</i><span>Online Ordering</span><i>&#10022;</i><span>Responsive Design</span><i>&#10022;</i>
+        <span>Business Website</span><i>&#10022;</i><span>Landing Page</span><i>&#10022;</i><span>E-Commerce</span><i>&#10022;</i><span>Web Application</span><i>&#10022;</i><span>Online Ordering</span><i>&#10022;</i><span>Responsive Design</span><i>&#10022;</i>
       </div>
     </div>
 
-    <!-- ===== Fitur ===== -->
-    <section class="section" id="fitur">
+    <!-- ================= STUDIO / ABOUT ================= -->
+    <section class="section" id="studio">
       <div class="container">
-        <div class="section-head reveal">
-          <p class="section-eyebrow">Kenapa pilih kami</p>
-          <h2>Semua yang bisnismu butuh, <span class="grad-text">dalam satu paket</span>.</h2>
-          <p class="section-desc">Dibangun dengan teknologi modern (HTML5, CSS3, JavaScript) — ringan, aman, dan gampang dikelola.</p>
+        <div class="sec-head reveal">
+          <p class="sec-label">01 / Studio</p>
+          <h2 class="sec-title">More than<br /><em>just a website.</em></h2>
         </div>
 
-        <div class="features-grid">
-          <article class="feature-card reveal" style="--d:0ms">
-            <span class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="19" height="15" rx="2.5"/><path d="M2.5 8.5h19"/><path d="M6 15h6"/></svg>
-            </span>
-            <h3>Desain Responsif</h3>
-            <p>Tampil sempurna di HP, tablet, dan desktop. Pengunjung nyaman, meski buka dari mana saja.</p>
-          </article>
+        <div class="studio-grid">
+          <div class="studio-lead reveal" style="--d:80ms">
+            <p>
+              Kami percaya website bukan sekadar kehadiran online. Ia harus mewakili
+              brand-mu, menyampaikan nilaimu, dan menciptakan pengalaman yang berarti
+              bagi pelangganmu.
+            </p>
+            <p class="muted">
+              WebSpace adalah studio independen yang membangun website custom untuk
+              bisnis &mdash; dari landing page tunggal sampai sistem pemesanan online.
+              Setiap baris kode ditulis sendiri, setiap layanan dirancang sesuai
+              kebutuhan, tanpa template pasaran.
+            </p>
+          </div>
 
-          <article class="feature-card reveal" style="--d:60ms">
-            <span class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg>
-            </span>
-            <h3>Cepat &amp; Ringan</h3>
-            <p>Tanpa framework berat. Skor Pagespeed tinggi, loading under 2 detik.</p>
-          </article>
-
-          <article class="feature-card reveal" style="--d:120ms">
-            <span class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3.5 9h17M3.5 15h17"/><path d="M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z"/></svg>
-            </span>
-            <h3>Domain Nama Sendiri</h3>
-            <p>bisnisanda.com atas nama Gmail client — client pegang penuh kontrol domain-nya sendiri.</p>
-          </article>
-
-          <article class="feature-card reveal" style="--d:240ms">
-            <span class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5Z"/></svg>
-            </span>
-            <h3>Revisi 2x Gratis</h3>
-            <p>Tidak sesuai selera? Beri masukan, kami revisi sampai 2 kali tanpa biaya tambahan.</p>
-          </article>
-
-          <article class="feature-card reveal" style="--d:300ms">
-            <span class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
-            </span>
-            <h3>SEO Dasar</h3>
-            <p>Meta tag, struktur heading, sitemap, dan Open Graph — supaya gampang ditemukan Google.</p>
-          </article>
+          <ul class="studio-points" aria-label="Pendekatan studio">
+            <li class="reveal" style="--d:120ms">
+              <b>Dirancang dengan tujuan</b>
+              <span>Setiap halaman punya alasan: menjual, meyakinkan, atau memudahkan pelanggan.</span>
+            </li>
+            <li class="reveal" style="--d:180ms">
+              <b>Dibangun dengan presisi</b>
+              <span>Kode bersih dan rapi &mdash; cepat dimuat, gampang dikembangkan, siap dinaikkan levelnya.</span>
+            </li>
+            <li class="reveal" style="--d:240ms">
+              <b>Siap untuk bisnis</b>
+              <span>Dari tombol WhatsApp sampai sistem order &mdash; website yang benar-benar dipakai kerja.</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- ===== Paket ===== -->
-    <section class="section section-alt" id="paket">
+    <!-- ================= LAYANAN ================= -->
+    <section class="section" id="layanan">
       <div class="container">
-        <div class="section-head reveal">
-          <p class="section-eyebrow">Paket &amp; harga</p>
-          <h2>Harga bersahabat, <span class="grad-text">kualitas tetap premium</span>.</h2>
-          <p class="section-desc">Sekali bayar, website jadi milikmu. Hosting gratis — pilih domain: subdomain WebSpace atau domain milikmu sendiri.</p>
+        <div class="sec-head reveal">
+          <p class="sec-label">02 / Layanan</p>
+          <h2 class="sec-title">Apa yang bisa<br /><em>kami bangun.</em></h2>
         </div>
 
-        <div class="pricing-grid">
-          <!-- Paket 1 -->
-          <article class="pricing-card reveal" style="--d:0ms">
-            <div class="pricing-top">
+        <div class="svc-list">
+          <a href="#paket" class="svc-row reveal" style="--d:0ms">
+            <span class="svc-num">01</span>
+            <div class="svc-main">
+              <h3>Business Website</h3>
+              <p>Website profesional untuk perusahaan dan usaha &mdash; company profile, layanan, dan kontak yang meyakinkan.</p>
+            </div>
+            <span class="svc-tags">Company Profile &middot; Multi-halaman</span>
+            <span class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a href="#paket" class="svc-row reveal" style="--d:60ms">
+            <span class="svc-num">02</span>
+            <div class="svc-main">
               <h3>Landing Page</h3>
-              <p class="pricing-tag">Untuk promosi 1 produk / jasa</p>
+              <p>Halaman fokus konversi untuk produk, jasa, dan kampanye &mdash; satu tujuan, satu ajakan bertindak.</p>
             </div>
-            <div class="pricing-price">
-              <span class="cur">Rp</span><b>99</b><span class="unit">rb</span>
-              <small>sekali bayar</small>
-            </div>
-            <ul class="pricing-list">
-              <li><svg class="ck" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> 1 halaman penuh (hero, fitur, CTA, kontak)</li>
-              <li><svg class="ck" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Desain custom sesuai brand</li>
-              <li><svg class="ck" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Responsif + SEO dasar</li>
-              <li><svg class="ck" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Tombol WhatsApp &amp; form kontak</li>
-              <li><svg class="ck" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Deploy GitHub Pages + custom domain</li>
-              <li class="muted"><svg class="ck mm" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Revisi 1x</li>
-            </ul>
-            <div class="pricing-meta">
-              <span class="chip-mini">⏱ 1–2 hari</span>
-              <span class="chip-mini">🖥 1 halaman</span>
-            </div>
-            <button type="button" class="btn btn-ghost btn-block" data-order-open data-paket="Landing Page">Order Paket Ini</button>
-          </article>
+            <span class="svc-tags">1 Halaman &middot; Konversi</span>
+            <span class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
 
-          <!-- Paket 2 (featured) -->
-          <article class="pricing-card featured reveal" style="--d:80ms">
-            <span class="pricing-flag">★ Paling Laris</span>
-            <div class="pricing-top">
-              <h3>Business Profile</h3>
-              <p class="pricing-tag">Wajah digital usaha / CV perusahaan</p>
+          <a href="#paket" class="svc-row reveal" style="--d:120ms">
+            <span class="svc-num">03</span>
+            <div class="svc-main">
+              <h3>E-Commerce Website</h3>
+              <p>Toko online dengan katalog produk yang rapi dan pengalaman belanja yang nyaman di semua perangkat.</p>
             </div>
-            <div class="pricing-price">
-              <span class="cur">Rp</span><b>199</b><span class="unit">rb</span>
-              <small>sekali bayar</small>
-            </div>
-            <ul class="pricing-list">
-              <li><svg class="ck" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> 3–5 halaman (Beranda, Tentang, Layanan, Kontak)</li>
-              <li><svg class="ck" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Semua yang ada di paket Landing Page</li>
-              <li><svg class="ck" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Galeri produk / layanan</li>
-              <li><svg class="ck" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Google Maps embed &amp; jam operasional</li>
-              <li><svg class="ck" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Favicon + Open Graph share preview</li>
-              <li class="muted"><svg class="ck mm" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Revisi 2x</li>
-            </ul>
-            <div class="pricing-meta">
-              <span class="chip-mini">⏱ 3–5 hari</span>
-              <span class="chip-mini">🖥 3–5 halaman</span>
-            </div>
-            <button type="button" class="btn btn-primary btn-block" data-order-open data-paket="Business Profile">Order Paket Ini</button>
-          </article>
+            <span class="svc-tags">Katalog &middot; Keranjang</span>
+            <span class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
 
-          <!-- Paket 3 -->
-          <article class="pricing-card reveal" style="--d:160ms">
-            <div class="pricing-top">
-              <h3>Portofolio</h3>
-              <p class="pricing-tag">Untuk freelancer, pelajar &amp; kreator</p>
+          <a href="#paket" class="svc-row reveal" style="--d:180ms">
+            <span class="svc-num">04</span>
+            <div class="svc-main">
+              <h3>Custom Web Application</h3>
+              <p>Solusi web yang dirancang mengikuti alur kerja bisnismu &mdash; termasuk sistem pemesanan online dengan dashboard.</p>
             </div>
-            <div class="pricing-price">
-              <span class="cur">Rp</span><b>149</b><span class="unit">rb</span>
-              <small>sekali bayar</small>
-            </div>
-            <ul class="pricing-list">
-              <li><svg class="ck" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Halaman profil + galeri karya</li>
-              <li><svg class="ck" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Lightbox foto proyek (klik untuk perbesar)</li>
-              <li><svg class="ck" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Timeline pengalaman / sertifikat</li>
-              <li><svg class="ck" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Tautan sosial media &amp; CV download</li>
-              <li><svg class="ck" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Deploy GitHub Pages + custom domain</li>
-              <li class="muted"><svg class="ck mm" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Revisi 2x</li>
-            </ul>
-            <div class="pricing-meta">
-              <span class="chip-mini">⏱ 2–3 hari</span>
-              <span class="chip-mini">🖥 1–2 halaman</span>
-            </div>
-            <button type="button" class="btn btn-ghost btn-block" data-order-open data-paket="Portofolio">Order Paket Ini</button>
-          </article>
-        </div>
-
-        <!-- ===== Dua pilihan domain (dari poster) ===== -->
-        <div class="domain-choice-head reveal">
-          <h3>Dua pilihan domain, <span class="grad-text">satu tujuan</span>.</h3>
-          <p>«Kamu yang pilih, sesuai kebutuhan dan budget. Kami yang bantu wujudkan!»</p>
-        </div>
-
-        <div class="opt-grid">
-          <article class="opt-card opt-a reveal">
-            <div class="opt-top">
-              <span class="opt-badge">A</span>
-              <div>
-                <h4>Domain Ditanggung WebSpace</h4>
-                <span class="opt-flag">Lebih praktis untuk pemula</span>
-              </div>
-            </div>
-            <div class="opt-addr">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
-              <code>kopi.webspace.com</code>
-            </div>
-            <div class="opt-list-title">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-              Kelebihan untuk klien:
-            </div>
-            <ul class="opt-list">
-              <li><svg class="ok-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Tidak perlu keluar uang lagi untuk membeli domain.</li>
-              <li><svg class="ok-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Proses pembelian lebih simpel.</li>
-              <li><svg class="ok-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Cocok untuk UMKM, usaha rumahan, dan bisnis yang baru mulai.</li>
-            </ul>
-            <div class="opt-list-title neg">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
-              Kekurangannya:
-            </div>
-            <ul class="opt-list">
-              <li><svg class="no-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg> Nama <b>WebSpace</b> ikut muncul di alamat website.</li>
-              <li><svg class="no-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg> Klien bergantung pada domain yang kami miliki.</li>
-            </ul>
-          </article>
-
-          <article class="opt-card opt-b reveal" style="--d:80ms">
-            <div class="opt-top">
-              <span class="opt-badge">B</span>
-              <div>
-                <h4>Domain Dibayar Klien</h4>
-                <span class="opt-flag">Lebih mandiri dan profesional</span>
-              </div>
-            </div>
-            <div class="opt-addr">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
-              <code>kopinikmat.com</code>
-            </div>
-            <div class="opt-list-title">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-              Kelebihan untuk klien:
-            </div>
-            <ul class="opt-list">
-              <li><svg class="ok-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Nama domain sesuai merek bisninya.</li>
-              <li><svg class="ok-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Lebih mudah mempertahankan alamat saat pindah penyedia jasa.</li>
-              <li><svg class="ok-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Kepemilikan domain lebih jelas jika didaftarkan atas nama klien.</li>
-            </ul>
-            <div class="opt-list-title neg">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
-              Kekurangannya:
-            </div>
-            <ul class="opt-list">
-              <li><svg class="no-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg> Harus membayar domain di luar biaya pembuatan website.</li>
-              <li><svg class="no-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg> Ada biaya perpanjangan tahunan.</li>
-            </ul>
-          </article>
-        </div>
-
-        <!-- Banner: biaya tambahan subdomain -->
-        <div class="subfee reveal">
-          <span class="subfee-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
-          </span>
-          <div>
-            <h4>Biaya Tambahan untuk Subdomain</h4>
-            <p>Jika kamu memilih subdomain (contoh: kopi.webspace.com), ada biaya tambahan <b>Rp100.000 (sekali bayar)</b> untuk pendaftaran subdomain atas nama klien. Biaya ini kami gunakan untuk proses pendaftaran subdomain di sisi kami, agar kamu bisa langsung mengelola website dengan mudah. Tidak termasuk perpanjangan domain utama WebSpace.</p>
-          </div>
-          <div class="subfee-price">
-            <b>Rp100.000</b>
-            <span>sekali bayar</span>
-          </div>
-        </div>
-
-        <!-- Rekomendasi: dua tipe paket -->
-        <div class="pricing-grid two">
-          <article class="pricing-card reveal" style="--d:0ms">
-            <div class="pricing-top">
-              <h3>Paket Hemat</h3>
-              <p class="pricing-tag">(Subdomain WebSpace)</p>
-            </div>
-            <div class="pricing-price">
-              <span class="cur">Rp</span><b>99</b><span class="unit">rb</span>
-              <small>sekali bayar</small>
-            </div>
-            <ul class="pricing-list">
-              <li><svg class="ck" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Sudah termasuk pembuatan website, hosting, dan subdomain.</li>
-            </ul>
-            <div class="pricing-meta">
-              <span class="chip-mini">🌐 kopi.webspace.com</span>
-            </div>
-            <a href="https://wa.me/6285778179537?text=Halo%2C%20saya%20mau%20order%20Paket%20Hemat%20(subdomain%20WebSpace)" class="btn btn-ghost btn-block" target="_blank" rel="noopener">Order Paket Ini</a>
-          </article>
-
-          <article class="pricing-card reveal" style="--d:80ms">
-            <div class="pricing-top">
-              <h3>Paket Domain Pribadi</h3>
-              <p class="pricing-tag">(Domain milik klien)</p>
-            </div>
-            <div class="pricing-price">
-              <span class="cur">Rp</span><b>99</b><span class="unit">rb</span>
-              <small>+ domain</small>
-            </div>
-            <ul class="pricing-list">
-              <li><svg class="ck" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Domain dibeli oleh klien, kami bantu proses pemasangannya.</li>
-            </ul>
-            <div class="pricing-meta">
-              <span class="chip-mini">🌐 kopinikmat.com</span>
-            </div>
-            <a href="https://wa.me/6285778179537?text=Halo%2C%20saya%20mau%20order%20Paket%20Domain%20Pribadi" class="btn btn-ghost btn-block" target="_blank" rel="noopener">Order Paket Ini</a>
-          </article>
-        </div>
-
-        <!-- Catatan domain -->
-        <div class="note-card reveal">
-          <div class="note-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><circle cx="12" cy="16.2" r="0.6" fill="currentColor"/></svg>
-          </div>
-          <div>
-            <h4>Catatan penting soal biaya:</h4>
-            <p>
-              <b>Dua opsi domain:</b> subdomain WebSpace (contoh: kopi.webspace.com) atau domain sendiri
-              yang dibayar client (.com ± Rp150rb/tahun, .my.id / .site mulai ± Rp10–50rb/tahun sesuai registrar).
-              <b>Hosting 100% gratis</b> karena kami deploy di GitHub Pages.
-            </p>
-          </div>
-        </div>
-
-        <!-- Daftar harga domain -->
-        <div class="domain-box reveal" id="domain">
-          <div class="domain-head">
-            <div>
-              <h3>Daftar Harga Domain</h3>
-              <p>Perkiraan harga pasar dari registrar populer (Niagahoster, Hostinger, Cloudflare, Namecheap). Domain dibeli sendiri <b>pakai Gmail client</b> — resmi atas nama kamu.</p>
-            </div>
-          </div>
-          <div class="domain-table-wrap">
-            <table class="domain-table">
-              <thead>
-                <tr>
-                  <th>Domain</th>
-                  <th>Perkiraan Harga Pertama</th>
-                  <th>Perpanjangan / Tahun</th>
-                  <th>Cocok Untuk</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><b>.my.id</b></td>
-                  <td><span class="price cheap">Rp10 – 40rb</span></td>
-                  <td>± Rp50rb</td>
-                  <td>UMKM lokal, usaha kecil</td>
-                </tr>
-                <tr>
-                  <td><b>.site</b> / <b>.online</b></td>
-                  <td><span class="price cheap">Rp12 – 30rb</span></td>
-                  <td>± Rp250 – 300rb</td>
-                  <td>Bisnis baru / calon brand</td>
-                </tr>
-                <tr>
-                  <td><b>.xyz</b></td>
-                  <td><span class="price cheap">Rp12 – 25rb</span></td>
-                  <td>± Rp180 – 250rb</td>
-                  <td>Startup, komunitas</td>
-                </tr>
-                <tr>
-                  <td><b>.store</b></td>
-                  <td><span class="price cheap">Rp20 – 60rb</span></td>
-                  <td>± Rp250 – 300rb</td>
-                  <td>Toko online / katalog produk</td>
-                </tr>
-                <tr>
-                  <td class="hot"><b>.com</b><span class="badge-hot">Paling Populer</span></td>
-                  <td><span class="price best">Rp140 – 180rb</span></td>
-                  <td>± Rp230 – 280rb</td>
-                  <td>Semua jenis bisnis — paling profesional</td>
-                </tr>
-                <tr>
-                  <td><b>.net</b> / <b>.org</b></td>
-                  <td><span class="price">Rp160 – 220rb</span></td>
-                  <td>± Rp260 – 320rb</td>
-                  <td>Alternatif .com, organisasi</td>
-                </tr>
-                <tr>
-                  <td><b>.id</b></td>
-                  <td><span class="price">Rp250 – 450rb</span></td>
-                  <td>± Rp450rb</td>
-                  <td>Brand Indonesia yang serius</td>
-                </tr>
-                <tr>
-                  <td><b>.dev</b> / <b>.io</b></td>
-                  <td><span class="price">Rp450 – 700rb</span></td>
-                  <td>± Rp550 – 700rb</td>
-                  <td>Developer, portofolio tech</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p class="domain-note">
-            * Harga promo bisa berubah sewaktu-waktu — kami bantu cek harga real-time saat kamu mau order, dan pastikan domain terpilih masih tersedia.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Cara kerja / sistem pembelian ===== -->
-    <section class="section flow" id="cara-kerja">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="section-eyebrow">Cara kerja</p>
-          <h2>5 langkah mudah, <span class="grad-text">website langsung online</span>.</h2>
-          <p class="section-desc">Pembelian domain menggunakan <b>Gmail client</b> — supaya domain resmi atas nama kamu dan bisa dikontrol penuh.</p>
-        </div>
-
-        <div class="flow-diagram reveal">
-          <div class="flow-card">
-            <span class="flow-num">01</span>
-            <span class="flow-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 10h8M8 14h5"/><path d="M21 12a8.5 8.5 0 0 1-12.4 7.5L3 21l1.6-5.1A8.5 8.5 0 1 1 21 12Z"/></svg>
-            </span>
-            <h3>Konsultasi &amp; Pilih Paket</h3>
-            <p>Chat via WhatsApp. Ceritakan usaha/kebutuhan, tentukan paket, dan kirim referensi desain (jika ada). DP 50% untuk mulai pengerjaan.</p>
-          </div>
-
-          <div class="flow-connector" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </div>
-
-          <div class="flow-card">
-            <span class="flow-num">02</span>
-            <span class="flow-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="19" height="15" rx="2.5"/><path d="M2.5 8.5h19"/><path d="M6 15h6"/></svg>
-            </span>
-            <h3>Kami Kerjakan Desain</h3>
-            <p>Website dibangun sesuai brief: warna, logo, konten, dan foto dari kamu. Progress dikabari tiap tahap.</p>
-          </div>
-
-          <div class="flow-connector" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </div>
-
-          <div class="flow-card">
-            <span class="flow-num">03</span>
-            <span class="flow-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="M4 10h16"/><path d="M8 14h4"/></svg>
-            </span>
-            <h3>Pembelian Domain (via Gmail Client)</h3>
-            <p>
-              Kami pandu kamu <b>membeli domain pakai akun Gmail-mu sendiri</b> di registrar pilihan —
-              domain resmi atas nama kamu, bukan atas nama kami. Nameserver &amp; DNS kami yang setel.
-            </p>
-          </div>
-
-          <div class="flow-connector" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </div>
-
-          <div class="flow-card">
-            <span class="flow-num">04</span>
-            <span class="flow-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10a5.5 5.5 0 0 1 0 11H7a4.5 4.5 0 0 1-.7-8.9A6 6 0 0 1 18 10Z"/></svg>
-            </span>
-            <h3>Deploy ke Hosting Gratis</h3>
-            <p>Website di-upload ke <b>GitHub Pages</b> (gratis) dan disambungkan ke domain kamu. HTTPS aktif otomatis.</p>
-          </div>
-
-          <div class="flow-connector" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </div>
-
-          <div class="flow-card">
-            <span class="flow-num">05</span>
-            <span class="flow-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-            </span>
-            <h3>Revisi &amp; Serah Terima</h3>
-            <p>Kamu review hasilnya. Revisi gratis sesuai paket, lalu pelunasan 50% dan website resmi jadi milikmu — kode sumber diserahkan.</p>
-          </div>
-        </div>
-
-        <!-- Poster ringkas -->
-        <div class="poster reveal">
-          <div class="poster-head">
-            <span class="poster-logo"><img src="assets/img/logo-webspace.jpg" alt="Logo WebSpace" /></span>
-            <div>
-              <h3>Ringkasan Biaya — Poster Sistem Kerja</h3>
-              <p>Simpan atau screenshot bagian ini untuk kamu lihat kapan saja.</p>
-            </div>
-          </div>
-          <div class="poster-grid">
-            <div class="poster-item">
-              <span class="poster-key">Harga Paket</span>
-              <span class="poster-val">Rp99rb – Rp199rb</span>
-              <span class="poster-hint">sekali bayar, termasuk desain &amp; deploy</span>
-            </div>
-            <div class="poster-item">
-              <span class="poster-key">Hosting</span>
-              <span class="poster-val free">Rp0 / bulan</span>
-              <span class="poster-hint">GitHub Pages — gratis selamanya</span>
-            </div>
-            <div class="poster-item">
-              <span class="poster-key">Domain</span>
-              <span class="poster-val client">Subdomain atau milik client</span>
-              <span class="poster-hint">subdomain WebSpace (+Rp100rb sekali bayar) atau domain sendiri (±Rp10rb–150rb/tahun)</span>
-            </div>
-            <div class="poster-item">
-              <span class="poster-key">Total Tahun Pertama</span>
-              <span class="poster-val">± Rp109rb – Rp349rb</span>
-              <span class="poster-hint">paket + domain, tanpa biaya bulanan</span>
-            </div>
-          </div>
-          <div class="poster-steps">
-            <span>1 · Chat &amp; DP 50%</span>
-            <span>2 · Desain dikerjakan</span>
-            <span>3 · Domain dibeli via Gmail client</span>
-            <span>4 · Deploy GitHub Pages</span>
-            <span>5 · Revisi &amp; serah terima</span>
-          </div>
-          <a href="https://wa.me/6285778179537?text=Halo%2C%20saya%20tertarik%2C%20boleh%20jelaskan%20sistemnya%3F" class="btn btn-primary poster-cta" target="_blank" rel="noopener">
-            Mulai Sekarang via WhatsApp
+            <span class="svc-tags">Sistem &middot; Dashboard</span>
+            <span class="svc-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- ===== Poster & Panduan ===== -->
-    <section class="section section-alt" id="poster">
+    <!-- ================= KARYA ================= -->
+    <section class="section" id="karya">
       <div class="container">
-        <div class="section-head reveal">
-          <p class="section-eyebrow">Poster &amp; panduan</p>
-          <h2>Materi visual WebSpace, <span class="grad-text">gampang dipahami</span>.</h2>
-          <p class="section-desc">Rangkuman sistem kerja, harga, dan pilihan domain dalam bentuk poster — <b>klik gambar untuk memperbesar</b>. Cocok disimpan atau dibagikan ke rekan bisnismu.</p>
+        <div class="sec-head reveal">
+          <p class="sec-label">03 / Karya Terpilih</p>
+          <h2 class="sec-title">Selected<br /><em>work.</em></h2>
+          <p class="sec-note">Proyek yang pernah kami rancang dan bangun dari nol.</p>
         </div>
 
-        <div class="gallery-grid">
-          <figure class="gallery-card reveal" data-caption="Panduan Memilih Domain — perbandingan .com, .id, .net, .co.id &amp; .my.id beserta harga per tahun dan tips memilih nama yang tepat.">
-            <button class="gallery-thumb" type="button" aria-label="Perbesar poster Panduan Memilih Domain">
-              <img src="assets/img/poster-domain-harga.jpg" alt="Poster panduan memilih domain WebSpace" loading="lazy" width="1024" height="1536" />
-              <span class="gallery-zoom" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg>
-                Lihat detail
-              </span>
-            </button>
-            <figcaption>
-              <h3>Panduan Memilih Domain</h3>
-              <p>Perbandingan ekstensi .com, .id, .net, .co.id &amp; .my.id — harga per tahun plus tips biar nama bisnismu gampang dikenali.</p>
-            </figcaption>
-          </figure>
+        <div class="work-grid">
+          <article class="work-card work-a reveal" style="--d:0ms">
+            <figure class="work-media">
+              <img src="assets/img/work-cafeiola.jpg" alt="Preview website Cafeiola - restoran dan cafe" width="1200" height="900" loading="lazy" />
+            </figure>
+            <div class="work-info">
+              <div class="work-head">
+                <h3>Cafeiola</h3>
+                <span class="work-year">Restoran &amp; Cafe</span>
+              </div>
+              <p>Website profil restoran dengan menu digital, suasana tempat, dan lokasi melalui Google Maps.</p>
+              <ul class="work-services"><li>Landing Page</li><li>Menu Digital</li><li>Maps Embed</li></ul>
+            </div>
+          </article>
 
-          <figure class="gallery-card reveal" style="--d:80ms" data-caption="Sistem Pembelian Domain &amp; Pembuatan Website — 6 langkah transparan dari pemesanan hingga website online, termasuk alasan domain didaftarkan memakai Gmail client.">
-            <button class="gallery-thumb" type="button" aria-label="Perbesar poster Sistem Pembelian Domain">
-              <img src="assets/img/poster-sistem-kerja.jpg" alt="Poster sistem pembelian domain dan pembuatan website" loading="lazy" width="1024" height="1536" />
-              <span class="gallery-zoom" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg>
-                Lihat detail
-              </span>
-            </button>
-            <figcaption>
-              <h3>Sistem Pembelian Domain &amp; Website</h3>
-              <p>6 langkah transparan dari pemesanan sampai online — dan kenapa domain didaftarkan pakai Gmail client-mu sendiri.</p>
-            </figcaption>
-          </figure>
+          <article class="work-card work-b reveal" style="--d:100ms">
+            <figure class="work-media">
+              <img src="assets/img/work-andara.jpg" alt="Preview website Andara Global Trading - import export" width="1200" height="779" loading="lazy" />
+            </figure>
+            <div class="work-info">
+              <div class="work-head">
+                <h3>Andara Global Trading</h3>
+                <span class="work-year">Import &amp; Export</span>
+              </div>
+              <p>Company profile perusahaan trading dengan katalog layanan dan formulir permintaan penawaran.</p>
+              <ul class="work-services"><li>Business Profile</li><li>Katalog Layanan</li></ul>
+            </div>
+          </article>
 
-          <figure class="gallery-card reveal" style="--d:160ms" data-caption="Dua Pilihan Domain, Satu Tujuan — bandingkan opsi subdomain WebSpace vs domain pribadi: kelebihan, kekurangan, dan rekomendasi paketnya.">
-            <button class="gallery-thumb" type="button" aria-label="Perbesar poster Dua Pilihan Domain">
-              <img src="assets/img/poster-dua-domain.jpg" alt="Poster dua pilihan domain WebSpace" loading="lazy" width="1024" height="1536" />
-              <span class="gallery-zoom" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg>
-                Lihat detail
-              </span>
-            </button>
-            <figcaption>
-              <h3>Dua Pilihan Domain, Satu Tujuan</h3>
-              <p>Bandingkan subdomain WebSpace vs domain pribadi — kelebihan, kekurangan, dan rekomendasi paketnya dalam satu poster.</p>
-            </figcaption>
-          </figure>
-
-          <figure class="gallery-card reveal" style="--d:240ms" data-caption="Buat Landing Page Profesional — contoh materi promosi paket website mulai Rp99rb: desain modern, tombol WhatsApp, hosting GitHub Pages.">
-            <button class="gallery-thumb" type="button" aria-label="Perbesar poster Landing Page Profesional">
-              <img src="assets/img/poster-landing-page.jpg" alt="Poster paket landing page profesional WebSpace" loading="lazy" width="1024" height="1536" />
-              <span class="gallery-zoom" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg>
-                Lihat detail
-              </span>
-            </button>
-            <figcaption>
-              <h3>Contoh Materi Promosi Paket</h3>
-              <p>Poster paket website mulai Rp99rb — desain modern, tombol WhatsApp, dan hosting GitHub Pages yang aman.</p>
-            </figcaption>
-          </figure>
+          <article class="work-card work-c reveal" style="--d:160ms">
+            <figure class="work-media">
+              <img src="assets/img/work-webdesign.jpg" alt="Konsep toko online - pengembangan website" width="1200" height="900" loading="lazy" />
+            </figure>
+            <div class="work-info">
+              <div class="work-head">
+                <h3>Toko Online</h3>
+                <span class="work-year">E-Commerce &middot; Konsep</span>
+              </div>
+              <p>Konsep toko online dengan katalog produk rapi, keranjang belanja, dan checkout langsung lewat WhatsApp.</p>
+              <ul class="work-services"><li>E-Commerce</li><li>Katalog Produk</li><li>Checkout WA</li></ul>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ===== Testimoni ===== -->
-    <section class="section" id="testimoni">
+    <!-- ================= PROSES ================= -->
+    <section class="section" id="proses">
       <div class="container">
-        <div class="section-head reveal">
-          <p class="section-eyebrow">Testimoni</p>
-          <h2>Kata mereka yang sudah <span class="grad-text">online duluan</span>.</h2>
+        <div class="sec-head reveal">
+          <p class="sec-label">04 / Proses</p>
+          <h2 class="sec-title">Cara kami<br /><em>bekerja.</em></h2>
         </div>
 
-        <div class="testi-grid">
-          <figure class="testi-card reveal">
-            <div class="stars">★★★★★</div>
-            <blockquote>
-              "Pesan Kamis, Jumat sore website warung saya sudah online. Cuma 99rb tapi kelihatan mahal — sekarang customer datang dari Google."
-            </blockquote>
-            <figcaption>
-              <span class="ava">BU</span>
-              <div><b>Bu Ratna</b><span>Warung Makan Ratna — Depok</span></div>
-            </figcaption>
-          </figure>
-
-          <figure class="testi-card reveal" style="--d:80ms">
-            <div class="stars">★★★★★</div>
-            <blockquote>
-              "Saya kirim logo + foto produk lewat WhatsApp, sisanya dikerjakan semua. Prosesnya jelas, bayar dua kali, nggak ada biaya siluman."
-            </blockquote>
-            <figcaption>
-              <span class="ava">DA</span>
-              <div><b>Dedi Anugrah</b><span>Laundry Bersih Kilat — Bekasi</span></div>
-            </figcaption>
-          </figure>
-
-          <figure class="testi-card reveal" style="--d:160ms">
-            <div class="stars">★★★★★</div>
-            <blockquote>
-              "Portofolio desain saya sekarang ada alamatnya sendiri. Dikirim ke klien langsung kelihatan profesional. Revisi juga cepat."
-            </blockquote>
-            <figcaption>
-              <span class="ava">SR</span>
-              <div><b>Sari Ramadhani</b><span>Freelance Illustrator</span></div>
-            </figcaption>
-          </figure>
-        </div>
-
-        <div class="testi-strip reveal">
-          <div><b>50+</b><span>website selesai dibuat</span></div>
-          <div><b>1–5</b><span>hari pengerjaan</span></div>
-          <div><b>100%</b><span>kode milik klien</span></div>
-          <div><b>Gratis</b><span>hosting selamanya</span></div>
-        </div>
+        <ol class="proc-list">
+          <li class="proc-row reveal" style="--d:0ms">
+            <span class="proc-num">01</span>
+            <div class="proc-main">
+              <h3>Discovery</h3>
+              <p>Memahami tujuan bisnis dan kebutuhanmu lewat diskusi &mdash; lewat chat atau panggilan singkat.</p>
+            </div>
+            <span class="proc-dur">Hari 1</span>
+          </li>
+          <li class="proc-row reveal" style="--d:60ms">
+            <span class="proc-num">02</span>
+            <div class="proc-main">
+              <h3>Design</h3>
+              <p>Membuat arah visual dan pengalaman pengguna yang unik, disesuaikan dengan brand-mu.</p>
+            </div>
+            <span class="proc-dur">Hari 1&ndash;2</span>
+          </li>
+          <li class="proc-row reveal" style="--d:120ms">
+            <span class="proc-num">03</span>
+            <div class="proc-main">
+              <h3>Development</h3>
+              <p>Membangun website dengan kode yang bersih, rapi, dan mudah dirawat &mdash; tanpa framework berlebihan.</p>
+            </div>
+            <span class="proc-dur">Hari 2&ndash;4</span>
+          </li>
+          <li class="proc-row reveal" style="--d:180ms">
+            <span class="proc-num">04</span>
+            <div class="proc-main">
+              <h3>Launch</h3>
+              <p>Pengujian di semua perangkat, optimasi kecepatan, deploy, dan serah terima lengkap.</p>
+            </div>
+            <span class="proc-dur">Hari 5</span>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <!-- ===== FAQ ===== -->
-    <section class="section section-alt" id="faq">
-      <div class="container faq-wrap">
-        <div class="section-head reveal">
-          <p class="section-eyebrow">FAQ</p>
-          <h2>Pertanyaan yang <span class="grad-text">sering ditanyakan</span>.</h2>
+    <!-- ================= PAKET ================= -->
+    <section class="section" id="paket">
+      <div class="container">
+        <div class="sec-head reveal">
+          <p class="sec-label">05 / Paket &amp; Harga</p>
+          <h2 class="sec-title">Sekali bayar,<br /><em>website jadi milikmu.</em></h2>
+          <p class="sec-note">Hosting gratis &mdash; pilih subdomain WebSpace atau pakai domain milikmu sendiri.</p>
         </div>
 
-        <div class="faq-list">
-          <details class="faq-item reveal" style="--d:0ms">
-            <summary>Kenapa hostingnya gratis? Aman nggak?</summary>
-            <p>Aman. GitHub Pages adalah layanan hosting milik Microsoft, dipakai jutaan website. Uptime tinggi, HTTPS otomatis, dan gratis selamanya untuk website statis seperti yang kami buat.</p>
-          </details>
-          <details class="faq-item reveal" style="--d:60ms">
-            <summary>Bisa pakai subdomain WebSpace biar nggak beli domain?</summary>
-            <p>Bisa. Alamatnya jadi misalnya <b>kopi.webspace.com</b> — praktis untuk pemula. Ada biaya pendaftaran subdomain <b>Rp100.000 (sekali bayar)</b>. Kalau mau alamat sesuai merek sendiri, pilih opsi domain pribadi.</p>
-          </details>
-          <details class="faq-item reveal" style="--d:120ms">
-            <summary>Domain-nya kenapa harus saya beli sendiri?</summary>
-            <p>Supaya domain <b>resmi atas nama kamu</b>. Kamu pakai Gmail sendiri saat membeli di registrar, jadi kamu pegang akses penuh — bisa dipindah, diperpanjang, atau dipakai untuk email bisnis tanpa tergantung kami.</p>
-          </details>
-          <details class="faq-item reveal" style="--d:120ms">
-            <summary>Domain bisa .com? berapa biayanya?</summary>
-            <p>Bisa. .com sekitar Rp140–160rb/tahun. Kalau mau lebih hemat, ada .my.id, .site, atau .online yang mulai Rp10–50rb/tahun (harga promo registrar, bisa berubah).</p>
-          </details>
-          <details class="faq-item reveal" style="--d:180ms">
-            <summary>Apakah bisa update isi website sendiri?</summary>
-            <p>Bisa. Semua konten disimpan dalam file yang mudah diubah, dan kode sumber diserahkan ke kamu. Kalau nggak mau ribet, kamu bisa order jasa update kecil ke kami.</p>
-          </details>
-          <details class="faq-item reveal" style="--d:240ms">
-            <summary>Metode pembayarannya bagaimana?</summary>
-            <p>DP 50% saat mulai pengerjaan, pelunasan 50% setelah website selesai dan sebelum serah terima final. Bayar via transfer bank / e-wallet.</p>
-          </details>
+        <div class="price-grid">
+          <article class="price-col reveal" style="--d:0ms">
+            <div class="price-head">
+              <h3>Landing Page</h3>
+              <p>Untuk promosi satu produk / jasa</p>
+            </div>
+            <p class="price-num"><sup>Rp</sup>99<i>rb</i><small>sekali bayar</small></p>
+            <ul>
+              <li>1 halaman penuh &mdash; hero, fitur, CTA, kontak</li>
+              <li>Desain custom sesuai brand</li>
+              <li>Responsif + SEO dasar</li>
+              <li>Tombol WhatsApp &amp; form kontak</li>
+              <li>Deploy + custom domain</li>
+              <li class="dim">Revisi 1&times;</li>
+            </ul>
+            <div class="price-foot">
+              <span class="mono">1&ndash;2 hari</span>
+              <button type="button" class="btn btn-line" data-order-open data-paket="Landing Page">Order Paket Ini</button>
+            </div>
+          </article>
+
+          <article class="price-col is-featured reveal" style="--d:80ms">
+            <span class="price-flag">Paling dipilih</span>
+            <div class="price-head">
+              <h3>Business Profile</h3>
+              <p>Wajah digital usaha / perusahaan</p>
+            </div>
+            <p class="price-num"><sup>Rp</sup>199<i>rb</i><small>sekali bayar</small></p>
+            <ul>
+              <li>3&ndash;5 halaman &mdash; Beranda, Tentang, Layanan, Kontak</li>
+              <li>Semua yang ada di paket Landing Page</li>
+              <li>Galeri produk / layanan</li>
+              <li>Google Maps &amp; jam operasional</li>
+              <li>Favicon + preview share (Open Graph)</li>
+              <li class="dim">Revisi 2&times;</li>
+            </ul>
+            <div class="price-foot">
+              <span class="mono">3&ndash;5 hari</span>
+              <button type="button" class="btn btn-solid" data-order-open data-paket="Business Profile">Order Paket Ini</button>
+            </div>
+          </article>
+
+          <article class="price-col reveal" style="--d:160ms">
+            <div class="price-head">
+              <h3>Portofolio</h3>
+              <p>Untuk freelancer, pelajar &amp; kreator</p>
+            </div>
+            <p class="price-num"><sup>Rp</sup>149<i>rb</i><small>sekali bayar</small></p>
+            <ul>
+              <li>Halaman profil + galeri karya</li>
+              <li>Lightbox foto proyek</li>
+              <li>Timeline pengalaman / sertifikat</li>
+              <li>Responsif + SEO dasar</li>
+              <li>Deploy + custom domain</li>
+              <li class="dim">Revisi 1&times;</li>
+            </ul>
+            <div class="price-foot">
+              <span class="mono">2&ndash;3 hari</span>
+              <button type="button" class="btn btn-line" data-order-open data-paket="Portofolio">Order Paket Ini</button>
+            </div>
+          </article>
         </div>
+
+        <p class="price-note reveal">Butuh toko online atau sistem custom? <button type="button" class="link-btn" data-order-open data-paket="Custom">Diskusikan proyekmu</button> &mdash; harga menyesuaikan kebutuhan.</p>
       </div>
     </section>
 
-    <!-- ===== CTA ===== -->
-    <section class="section cta">
+    <!-- ================= WHY WEBSPACE ================= -->
+    <section class="section" id="kenapa">
       <div class="container">
-        <div class="cta-panel reveal">
-          <h2>Siap bikin website untuk <span class="grad-text">bisnismu</span>?</h2>
-          <p>Slot pengerjaan terbatas tiap bulan biar kualitas tetap terjaga. Chat sekarang, konsultasi gratis tanpa komitmen.</p>
-          <div class="cta-actions">
-            <button type="button" class="btn btn-primary btn-lg" data-order-open>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/></svg>
-              Isi Form Order
-            </button>
-            <a href="https://wa.me/6285778179537?text=Halo%2C%20saya%20mau%20konsultasi%20dulu" class="btn btn-ghost btn-lg" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 10h8M8 14h5"/><path d="M21 12a8.5 8.5 0 0 1-12.4 7.5L3 21l1.6-5.1A8.5 8.5 0 1 1 21 12Z"/></svg>
-              Chat WhatsApp
-            </a>
+        <div class="sec-head reveal">
+          <p class="sec-label">06 / Kenapa WebSpace</p>
+          <h2 class="sec-title">Standar yang<br /><em>kami pegang.</em></h2>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-item reveal" style="--d:0ms">
+            <span class="why-num">A</span>
+            <div><h3>Custom Design</h3><p>Tidak ada template pasaran. Setiap proyek dirancang dari nol sesuai karakter brand-mu.</p></div>
+          </div>
+          <div class="why-item reveal" style="--d:60ms">
+            <span class="why-num">B</span>
+            <div><h3>Responsive Experience</h3><p>Tampil konsisten dan nyaman di HP, tablet, dan desktop &mdash; diuji sebelum serah terima.</p></div>
+          </div>
+          <div class="why-item reveal" style="--d:120ms">
+            <span class="why-num">C</span>
+            <div><h3>Clean Development</h3><p>HTML, CSS, dan JavaScript murni yang tertata &mdash; cepat, ringan, dan mudah dikembangkan.</p></div>
+          </div>
+          <div class="why-item reveal" style="--d:180ms">
+            <span class="why-num">D</span>
+            <div><h3>Business-Oriented</h3><p>Setiap elemen mengarah ke tujuan bisnis: menjual, meyakinkan, memudahkan pelanggan.</p></div>
+          </div>
+          <div class="why-item why-wide reveal" style="--d:240ms">
+            <span class="why-num">E</span>
+            <div><h3>Professional Support</h3><p>Komunikasi jelas lewat WhatsApp, revisi sesuai paket, dan bantuan teknis setelah serah terima.</p></div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ================= KONTAK / CTA ================= -->
+    <section class="section contact" id="kontak">
+      <div class="container">
+        <p class="sec-label reveal">07 / Kontak</p>
+        <h2 class="contact-title reveal" style="--d:60ms">
+          Let&rsquo;s build<br /><em>something</em><br /><span class="accent">meaningful.</span>
+        </h2>
+        <p class="contact-sub reveal" style="--d:140ms">
+          Punya ide untuk website berikutnya? Mari wujudkan menjadi pengalaman digital.
+        </p>
+        <div class="contact-actions reveal" style="--d:200ms">
+          <button type="button" class="btn btn-solid btn-lg" data-order-open>
+            Diskusikan Proyekmu
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <a class="btn btn-line btn-lg" href="https://wa.me/6285778179537?text=Halo%20WebSpace%2C%20saya%20mau%20konsultasi%20website" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.5A9.9 9.9 0 1 0 12.04 2Zm5.8 14.1c-.25.7-1.45 1.35-2 1.4-.55.05-1.05.25-3.55-.85s-4.05-3.75-4.2-4c-.15-.25-1-1.45-.95-2.75.05-1.3.75-1.9 1-2.15.25-.25.55-.3.75-.3h.55c.2 0 .4-.05.65.5.25.6.85 2.05.9 2.2.1.15.15.35.05.55-.1.2-.15.35-.3.55l-.45.5c-.15.15-.3.3-.15.6.15.3.75 1.25 1.6 2.05 1.1 1 1.95 1.3 2.25 1.45.3.15.5.1.65-.05.2-.2.75-.85.95-1.15.2-.3.4-.25.65-.15.25.1 1.6.75 1.9.9.3.15.5.2.55.35.05.15.05.8-.2 1.5Z"/></svg>
+            Chat WhatsApp
+          </a>
+        </div>
+        <p class="contact-meta mono reveal" style="--d:260ms">+62 857-7817-9537 &mdash; balasan cepat di jam kerja</p>
       </div>
     </section>
   </main>
 
-  <!-- ===== Footer ===== -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <a href="#home" class="brand">
-          <img class="brand-mark" src="assets/img/logo-webspace.jpg" alt="Logo WebSpace" width="42" height="42" />
-          <span class="brand-text"><b>Web</b>Space</span>
-        </a>
-        <p>Jasa pembuatan website murah untuk UMKM, pelajar, dan freelancer. Hosting gratis via GitHub Pages, domain atas nama client.</p>
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-foot">
+    <div class="container">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <a href="#beranda" class="wordmark">
+            <img src="assets/img/logo-webspace.jpg" alt="" width="34" height="34" />
+            <span>WEB<em>SPACE</em><sup>&reg;</sup></span>
+          </a>
+          <p>Studio digital independen yang membangun website custom untuk bisnis &mdash; dirancang dengan tujuan, dibangun dengan presisi.</p>
+        </div>
+
+        <nav class="foot-col" aria-label="Navigasi footer">
+          <h4>Navigasi</h4>
+          <a href="#studio">Studio</a>
+          <a href="#layanan">Layanan</a>
+          <a href="#karya">Karya</a>
+          <a href="#proses">Proses</a>
+          <a href="#paket">Paket</a>
+        </nav>
+
+        <div class="foot-col">
+          <h4>Layanan</h4>
+          <span>Business Website</span>
+          <span>Landing Page</span>
+          <span>E-Commerce Website</span>
+          <span>Custom Web Application</span>
+        </div>
+
+        <div class="foot-col">
+          <h4>Kontak</h4>
+          <a href="https://wa.me/6285778179537" target="_blank" rel="noopener">WhatsApp +62 857-7817-9537</a>
+          <span>Senin&ndash;Sabtu, 08.00&ndash;21.00 WIB</span>
+          <span>Indonesia</span>
+        </div>
       </div>
-      <nav class="footer-nav" aria-label="Navigasi footer">
-        <a href="#fitur">Fitur</a>
-        <a href="#paket">Paket</a>
-        <a href="#domain">Domain</a>
-        <a href="#cara-kerja">Cara Kerja</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-    </div>
-    <div class="container footer-bottom">
-      <p>© <span id="year">2026</span> <b>WebSpace</b> — Jasa Pembuatan Website. All rights reserved.</p>
+
+      <div class="foot-base">
+        <span>&copy; <span id="year">2026</span> WebSpace. Seluruh hak cipta dilindungi.</span>
+        <a href="#admin" class="foot-admin-link mono">Admin</a>
+        <span class="mono">Dibangun dengan HTML, CSS &amp; JavaScript murni.</span>
+      </div>
     </div>
   </footer>
 
-  <!-- Tombol WhatsApp mengambang -->
-  <a href="https://wa.me/6285778179537?text=Halo%20WebSpace%2C%20saya%20mau%20tanya-tanya%20dulu" class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="Chat WhatsApp WebSpace">
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91A9.85 9.85 0 0 0 12.04 2Zm5.8 14.03c-.24.68-1.4 1.3-1.93 1.35-.52.05-1.01.24-3.4-.9-2.87-1.37-4.63-4.4-4.77-4.6-.14-.2-1.13-1.55-1.13-2.96 0-1.4.73-2.09 1-2.38.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.57.8 1.97.87 2.11.07.14.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.14.14-.29.3-.13.58.16.29.72 1.2 1.55 1.94 1.07.96 1.97 1.26 2.25 1.4.28.14.45.12.61-.07.17-.19.71-.83.9-1.11.19-.29.38-.24.64-.14.26.09 1.66.78 1.94.92.28.14.47.21.54.33.07.12.07.68-.17 1.35Z"/></svg>
-    <span class="wa-float-tip">Chat sekarang</span>
-  </a>
-
-  <!-- Toast -->
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-
-  <!-- Lightbox galeri -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Pratinjau poster" hidden>
-    <button class="lb-close" type="button" aria-label="Tutup pratinjau">
-      <svg viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg>
-    </button>
-    <button class="lb-prev" type="button" aria-label="Poster sebelumnya">
-      <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
-    </button>
-    <figure class="lb-figure">
-      <img id="lbImg" src="" alt="" />
-      <figcaption id="lbCaption"></figcaption>
-    </figure>
-    <button class="lb-next" type="button" aria-label="Poster berikutnya">
-      <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
-    </button>
-  </div>
-
-  <!-- Modal form order -->
-  <div class="order-modal" id="orderModal" role="dialog" aria-modal="true" aria-label="Form order website" hidden>
-    <div class="order-panel">
-      <button class="order-close" type="button" aria-label="Tutup form order">
-        <svg viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg>
-      </button>
-
-      <div class="order-body" id="orderBody">
-        <div class="order-head">
-          <span class="order-badge">⚡ Respon &lt; 1 jam</span>
-          <h3>Form Order Website</h3>
-          <p>Isi datamu — order langsung masuk dashboard kami dan kamu dihubungi via WhatsApp.</p>
+  <!-- ================= MODAL ORDER ================= -->
+  <div class="modal" id="orderModal" role="dialog" aria-modal="true" aria-label="Form order website" hidden>
+    <div class="modal-panel" role="document">
+      <header class="modal-head">
+        <div>
+          <p class="sec-label">Mulai proyek</p>
+          <h3>Order Website</h3>
         </div>
+        <button type="button" class="modal-close" id="orderClose" aria-label="Tutup form order">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </header>
 
+      <div class="modal-body" id="orderBody">
         <form id="orderForm" novalidate>
-          <div class="field-row">
-            <label class="field">
-              <span>Nama / Nama usaha <b>*</b></span>
-              <input type="text" name="nama" placeholder="mis. Toko Berkah" required maxlength="80" />
-            </label>
-            <label class="field">
-              <span>No. WhatsApp <b>*</b></span>
-              <input type="tel" name="wa" placeholder="08xxxxxxxxxx" required maxlength="20" inputmode="tel" />
-            </label>
-          </div>
+          <label class="field">
+            <span>Nama bisnis / kamu</span>
+            <input type="text" name="nama" placeholder="mis. Toko Berkah" required maxlength="80" />
+          </label>
 
           <label class="field">
-            <span>Pilih paket <b>*</b></span>
+            <span>Nomor WhatsApp</span>
+            <input type="tel" name="wa" placeholder="08xxxxxxxxxx" required maxlength="20" inputmode="tel" />
+          </label>
+
+          <label class="field">
+            <span>Pilih paket</span>
             <select name="paket" required>
-              <option value="" disabled selected>— Pilih paket —</option>
-              <option value="Landing Page — Rp99rb">Landing Page — Rp99rb</option>
-              <option value="Portofolio — Rp149rb">Portofolio — Rp149rb</option>
-              <option value="Business Profile — Rp199rb">Business Profile — Rp199rb</option>
+              <option value="" disabled selected>&mdash; Pilih paket &mdash;</option>
+              <option value="Landing Page - Rp99rb">Landing Page &mdash; Rp99rb</option>
+              <option value="Portofolio - Rp149rb">Portofolio &mdash; Rp149rb</option>
+              <option value="Business Profile - Rp199rb">Business Profile &mdash; Rp199rb</option>
               <option value="Custom / konsultasi dulu">Custom / konsultasi dulu</option>
             </select>
           </label>
 
           <fieldset class="field">
-            <legend>Pilihan domain</legend>
-            <div class="radio-grid">
-              <label class="radio-card">
+            <legend>Domain</legend>
+            <div class="radio-line">
+              <label class="radio-pill">
                 <input type="radio" name="domainMode" value="Subdomain WebSpace (gratis)" checked />
-                <span class="radio-title">Subdomain WebSpace</span>
-                <span class="radio-desc">Gratis — mis. <i>tokomu.webspace.page</i></span>
+                <span>Subdomain WebSpace <small>(gratis)</small></span>
               </label>
-              <label class="radio-card">
+              <label class="radio-pill">
                 <input type="radio" name="domainMode" value="Domain sendiri" />
-                <span class="radio-title">Domain sendiri</span>
-                <span class="radio-desc">Beli sendiri, kami setel DNS</span>
+                <span>Domain sendiri</span>
               </label>
             </div>
+            <input type="text" name="domain" id="domainInput" placeholder="mis. tokoberkah.com" maxlength="60" hidden />
           </fieldset>
 
           <label class="field">
-            <span>Domain yang diinginkan <small>(opsional)</small></span>
-            <input type="text" name="domain" placeholder="mis. tokoberkah.com" maxlength="60" />
-          </label>
-
-          <label class="field">
             <span>Catatan kebutuhan <small>(opsional)</small></span>
-            <textarea name="catatan" rows="3" placeholder="mis. website untuk kedai kopi, ada menu & lokasi maps" maxlength="500"></textarea>
+            <textarea name="catatan" rows="3" placeholder="mis. website untuk kedai kopi, ada menu &amp; lokasi maps" maxlength="500"></textarea>
           </label>
 
-          <button type="submit" class="btn btn-primary btn-block btn-lg" id="orderSubmit">Kirim Order</button>
-          <p class="order-note">Data kamu hanya dipakai untuk memproses order. Butuh balasan cepat? <a href="https://wa.me/6285778179537" target="_blank" rel="noopener">Chat WhatsApp</a>.</p>
+          <button type="submit" class="btn btn-solid btn-block btn-lg" id="orderSubmit">Kirim Order</button>
+          <p class="modal-note">Order masuk ke sistem kami &mdash; setelah ini tampil pembayaran DP 50% via transfer BNI.</p>
         </form>
       </div>
 
-      <div class="order-success" id="orderSuccess" hidden>
-        <div class="success-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      <div class="modal-success" id="orderPay" hidden>
+        <div class="ok-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 10h19"/><path d="M6 15h4"/></svg>
         </div>
-        <h3>Order selesai! 🎉</h3>
-        <p>Terima kasih! Sekarang tinggal transfer ke rekening di bawah, lalu kirim bukti bayarnya via WhatsApp — begitu terverifikasi, website kamu langsung kami kerjakan.</p>
+        <h3>Pembayaran DP 50%</h3>
+        <p>Order kamu sudah masuk ke sistem kami. Transfer <b id="payAmount" class="accent">DP</b> dulu (50% dari paket) ke rekening di bawah &mdash; begitu DP terverifikasi, website kamu langsung kami kerjakan.</p>
 
         <div class="pay-box">
           <span class="pay-label">Transfer ke rekening</span>
@@ -929,10 +549,76 @@
           <span class="pay-an">a.n. Restu Rosenda</span>
         </div>
 
-        <div class="success-actions">
-          <a href="https://wa.me/6285778179537" class="btn btn-primary" id="payConfirmWa" target="_blank" rel="noopener">Kirim Bukti Bayar via WhatsApp</a>
-          <button type="button" class="btn btn-ghost" id="orderAgain">Order lagi</button>
+        <div class="ok-actions">
+          <a href="https://wa.me/6285778179537" class="btn btn-solid btn-block" id="payConfirmWa" target="_blank" rel="noopener">Saya Sudah Transfer &mdash; Konfirmasi</a>
+          <button type="button" class="btn btn-line btn-block" id="payBack">Ubah pesanan</button>
         </div>
+      </div>
+
+      <div class="modal-success" id="orderSuccess" hidden>
+        <div class="ok-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        </div>
+        <h3>Order selesai! &#127881;</h3>
+        <p>Terima kasih! Bukti transfer DP kamu kami tunggu di WhatsApp &mdash; begitu terverifikasi, pengerjaan website kamu langsung kami mulai.</p>
+
+        <div class="ok-actions">
+          <a href="https://wa.me/6285778179537" class="btn btn-solid btn-block" target="_blank" rel="noopener">Chat WhatsApp</a>
+          <button type="button" class="btn btn-line btn-block" id="orderAgain">Order lagi</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <!-- ================= ADMIN DASHBOARD (klik "Admin" di footer / #admin) ================= -->
+  <div id="adminOverlay" role="dialog" aria-modal="true" aria-label="Dashboard admin WebSpace" hidden>
+
+    <!-- Login admin -->
+    <div class="admin-view" id="adminLogin">
+      <button type="button" class="admin-x" aria-label="Tutup">&times;</button>
+      <div class="admin-card">
+        <img src="assets/img/logo-webspace.jpg" alt="Logo WebSpace" class="admin-logo" />
+        <p class="sec-label">Dashboard Order</p>
+        <h2>Login Admin</h2>
+        <p class="admin-sub">Masuk dengan akun admin Supabase untuk melihat order yang masuk secara realtime.</p>
+        <input type="email" id="adminEmail" placeholder="email admin" autocomplete="username" />
+        <input type="password" id="adminPass" placeholder="password" autocomplete="current-password" />
+        <button type="button" class="btn btn-solid btn-block" id="adminLoginBtn">Masuk Dashboard</button>
+        <p class="admin-err" id="adminErr"></p>
+      </div>
+    </div>
+
+    <!-- Dashboard order -->
+    <div class="admin-view admin-dash" id="adminDash" hidden>
+      <header class="admin-bar">
+        <div class="admin-bar-left">
+          <img src="assets/img/logo-webspace.jpg" alt="" />
+          <div>
+            <p class="sec-label">Dashboard Order</p>
+            <h2>WebSpace Admin</h2>
+          </div>
+        </div>
+        <div class="admin-bar-right">
+          <span class="admin-live"><i></i> <span id="adminSync">&mdash;</span></span>
+          <button type="button" class="admin-sm is-on" id="adminAuto">Auto &#10003;</button>
+          <button type="button" class="admin-sm" id="adminRefresh">Refresh</button>
+          <button type="button" class="admin-sm" id="adminCsv">Export CSV</button>
+          <button type="button" class="admin-sm admin-logout" id="adminLogout">Keluar</button>
+          <button type="button" class="admin-x" id="adminCloseDash" aria-label="Tutup dashboard">&times;</button>
+        </div>
+      </header>
+
+      <div class="admin-stats">
+        <div class="admin-stat"><b id="aTotal">0</b><span>Total order</span></div>
+        <div class="admin-stat"><b id="aBaru">0</b><span>Belum diproses</span></div>
+        <div class="admin-stat"><b id="aProses">0</b><span>Sedang diproses</span></div>
+        <div class="admin-stat"><b id="aSelesai">0</b><span>Selesai</span></div>
+      </div>
+
+      <div class="admin-list" id="adminList">
+        <div class="admin-empty">Memuat order&hellip;</div>
       </div>
     </div>
   </div>
